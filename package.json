@@ -1,0 +1,25 @@
+{
+  "name": "shiggy-bot",
+  "version": "1.0.0",
+  "description": "Roleplay Bot",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon build/index.js"
+  },
+  "author": "fyydsz",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.15.3",
+    "dotenv": "^16.4.5",
+    "glob": "^11.0.0",
+    "mongoose": "^8.5.1",
+    "nodemon": "^3.1.4",
+    "winston": "^3.13.1",
+    "winston-daily-rotate-file": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "express": "^4.19.2",
+    "typescript": "^5.5.4"
+  }
+}
