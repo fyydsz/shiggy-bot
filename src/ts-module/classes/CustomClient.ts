@@ -6,9 +6,7 @@ import Command from "./Command";
 import SubCommand from "./SubCommand";
 
 const env = configDotenv();
-const mongourl = process.env.MONGOURL;
 const token = process.env.TOKEN
-const clientId = process.env.CLIENTID;
 
 export default class CustomClient extends Client implements iCustomClient {
     handlers: Handler;
