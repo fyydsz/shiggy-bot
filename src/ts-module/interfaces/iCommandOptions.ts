@@ -1,4 +1,4 @@
-import Category from "../enums/Category";
+import Category from "../enums/CategoryCommand";
 
 export default interface iCommandOptions {
     name: string;
