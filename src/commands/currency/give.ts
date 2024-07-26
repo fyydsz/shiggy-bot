@@ -1,7 +1,7 @@
 import { ApplicationCommandOptionType, CacheType, ChatInputCommandInteraction, PermissionsBitField } from "discord.js";
 import Command from "../../ts-module/classes/Command";
 import CustomClient from "../../ts-module/classes/CustomClient";
-import Category from "../../ts-module/enums/Category";
+import Category from "../../ts-module/enums/CategoryCommand";
 // ===================
 import balanceSchema from "../../database/currencySchema";
 
@@ -33,7 +33,7 @@ export default class GiveCommand extends Command {
               required: true,
             }
           ]
-        }
+        },
       ],
       dev: false,
     });
@@ -41,6 +41,8 @@ export default class GiveCommand extends Command {
 
   async Execute(interaction: ChatInputCommandInteraction<CacheType>) {
     const user = interaction.options.getUser("user");
+    if (user?.bot) return interaction.reply({ content: "Kamu tidak bisa mengirim uang ke bot!", ephemeral: true });
+
     const amount = interaction.options.getInteger("amount");
     const myBalance = await balanceSchema.findOne({ userId: interaction.user.id });
     // create an if
@@ -59,4 +61,4 @@ export default class GiveCommand extends Command {
     await myBalance?.updateOne({ $inc: { balance: -amount! } });
     return interaction.reply({ content: `Berhasil memberikan ${amount} coin Shiggy kepada ${user?.tag}` });
   }
-}
+} 
