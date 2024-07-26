@@ -1,7 +1,7 @@
 import { CacheType, ChatInputCommandInteraction, PermissionsBitField } from "discord.js";
 import Command from "../../ts-module/classes/Command";
 import CustomClient from "../../ts-module/classes/CustomClient";
-import Category from "../../ts-module/enums/Category";
+import Category from "../../ts-module/enums/CategoryCommand";
 
 export default class PingCommand extends Command {
     constructor(client: CustomClient) {
