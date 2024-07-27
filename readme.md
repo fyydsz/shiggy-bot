@@ -36,8 +36,7 @@ node build/index.js
 ```
 
 ## Contribution & License
-Contributions are welcome! If you find any bugs or have suggestions for improvements, please create an issue or a pull request on GitHub.\
-Shiggy Bot is licensed under the **GPL v3.0**.
+Contributions are welcome! If you find any bugs or have suggestions for improvements, please create an issue or a pull request on GitHub. Shiggy Bot is licensed under the **GPL v3.0**.
 
 ## Contact Me
 If you have any questions or need help with Shiggy Bot, please contact [**fyy on Discord**](https://discord.com/users/497748439770333184)
