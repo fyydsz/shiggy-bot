@@ -1,7 +1,7 @@
 import { ActionRowBuilder, ApplicationCommandOptionType, CacheType, ChatInputCommandInteraction, ModalBuilder, PermissionsBitField, TextInputBuilder, TextInputStyle } from "discord.js";
 import Command from "../../ts-module/classes/Command";
 import CustomClient from "../../ts-module/classes/CustomClient";
-import Category from "../../ts-module/enums/CategoryCommand";
+import Category from "../../ts-module/enums/Commands/CategoryCommand";
 
 export default class EmbedCommand extends Command {
     constructor(client: CustomClient) {
