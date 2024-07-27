@@ -1,6 +1,6 @@
 import { AutocompleteInteraction, ChatInputCommandInteraction } from "discord.js";
 import CustomClient from "../classes/CustomClient";
-import Category from "../enums/CategoryCommand";
+import Category from "../enums/Commands/CategoryCommand";
 
 export default interface iCommand {
     client: CustomClient;
