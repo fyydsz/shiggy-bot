@@ -22,7 +22,7 @@ export default class EmbedCommand extends Command {
         })
     }
     async Execute(interaction: ChatInputCommandInteraction<CacheType>){
-        const modal = new ModalBuilder().setCustomId("embedCreate").setTitle("Buat pesan Embed");
+        const modal = new ModalBuilder().setCustomId("embedCreate").setTitle("Buat pesan Embed!");
 
 		// Add components to modal
 

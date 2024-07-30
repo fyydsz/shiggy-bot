@@ -2,6 +2,8 @@ import express, { Request, Response } from "express";
 import logger from "./utils/logger";
 import mongoose from "mongoose";
 import CustomClient from "./ts-module/classes/CustomClient";
+import Player from "./ts-module/classes/rpg/Player";
+import PlayerClassType from "./ts-module/enums/RPG/PlayerClassType";
 (new CustomClient).Init();
 import { configDotenv } from "dotenv";
 const env = configDotenv();

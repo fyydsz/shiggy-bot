@@ -5,6 +5,7 @@ import CustomClient from "./CustomClient";
 import Event from "./Events";
 import Command from "./Command";
 import SubCommand from "./SubCommand";
+
 export default class Handler implements iHandler {
     client: CustomClient;
     constructor(client: CustomClient) {
